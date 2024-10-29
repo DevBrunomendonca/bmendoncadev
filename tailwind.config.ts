@@ -18,6 +18,7 @@ const config: Config = {
         "primary-white": "#F1F1F1",
         "secondary-white": "#D9D9D9",
         "third-white": "#C5C5C5",
+        "primary-gray": "#94A3B8",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -77,6 +78,9 @@ const config: Config = {
           "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
           "50%": { opcity: "1", transform: "translatey(0)" },
         },
+      },
+      boxShadow: {
+        shadowOne: "5px 4px 25px 0px rgba(62,86,146,0.4)",
       },
     },
   },
