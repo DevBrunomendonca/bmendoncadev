@@ -12,11 +12,12 @@ const config: Config = {
       colors: {
         "primary-blue": "#080F20",
         "secondary-blue": "#3E5692",
+        "third-blue": "#4B639E",
         "primary-black": "#1A1D25",
         "secondary-black": "#3C3C3C",
         "primary-white": "#F1F1F1",
         "secondary-white": "#D9D9D9",
-        "third-white": "#CACACA",
+        "third-white": "#C5C5C5",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -62,6 +63,20 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      keyframes: {
+        animationArrowOne: {
+          "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
+          "50%": { opcity: "1", transform: "translatey(0)" },
+        },
+        animationArrowTwo: {
+          "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
+          "50%": { opcity: "1", transform: "translatey(0)" },
+        },
+        animationArrowThree: {
+          "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
+          "50%": { opcity: "1", transform: "translatey(0)" },
+        },
       },
     },
   },
