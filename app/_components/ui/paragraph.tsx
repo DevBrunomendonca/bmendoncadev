@@ -7,7 +7,12 @@ interface ParagraphProps {
 
 const Paragraph = ({ content, className }: ParagraphProps) => {
   return (
-    <p className={cn("text-sm font-light md:text-base", className)}>
+    <p
+      className={cn(
+        "text-sm font-light text-primary-gray md:text-base",
+        className,
+      )}
+    >
       {content}
     </p>
   )
