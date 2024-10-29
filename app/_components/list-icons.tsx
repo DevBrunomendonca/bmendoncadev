@@ -2,6 +2,11 @@ import Image from "next/image"
 import { ReactNode } from "react"
 import { cn } from "../_lib/utils"
 
+interface ListIconSocialMediaProps {
+  children: ReactNode
+  className: string
+}
+
 interface IconSocialMediaProps {
   href: string
   srcIcon: string
@@ -9,12 +14,13 @@ interface IconSocialMediaProps {
   className?: string
 }
 
-interface ListIconSocialMediaProps {
-  children: ReactNode
-  className: string
+interface IconProps {
+  srcIcon: string
+  altIcon: string
+  className?: string
 }
 
-export const ListIconSocialMedias = ({
+export const ListIcons = ({
   children,
   className,
 }: ListIconSocialMediaProps) => {
@@ -35,5 +41,17 @@ export const IconSocialMedia = ({
         className="h-full w-auto"
       />
     </a>
+  )
+}
+export const Icon = ({ srcIcon, altIcon, className }: IconProps) => {
+  return (
+    <Image
+      src={srcIcon}
+      alt={altIcon}
+      height={0}
+      width={0}
+      sizes="100vh"
+      className={className}
+    />
   )
 }

@@ -4,10 +4,7 @@ import Link from "next/link"
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet"
 import { useCallback, useEffect, useState } from "react"
 import { AlignRight } from "lucide-react"
-import {
-  IconSocialMedia,
-  ListIconSocialMedias,
-} from "./list-icon-social-medias"
+import { IconSocialMedia, ListIcons } from "./list-icons"
 
 const SheetButton = () => {
   const [sheetIsOpen, setSheetIsOpen] = useState<boolean>(false)
@@ -65,33 +62,33 @@ const SheetButton = () => {
             </Link>
           </ul>
         </nav>
-        <ListIconSocialMedias className="mt-10 flex h-6 items-center justify-end gap-4">
+        <ListIcons className="mt-10 flex h-6 items-center justify-end gap-4">
           <IconSocialMedia
             href="https://www.instagram.com/brunmendonca_/"
-            srcIcon="icone-insta.svg"
+            srcIcon="/icons/icone-insta.svg"
             altIcon="Icone Instagra"
           />
           <IconSocialMedia
             href="https://www.linkedin.com/in/devbrunomendonca/"
-            srcIcon="icone-linkdin.svg"
+            srcIcon="/icons/icone-linkdin.svg"
             altIcon="Icone LinkdIn"
           />
           <IconSocialMedia
             href="https://github.com/DevBrunomendonca"
-            srcIcon="icone-github.svg"
+            srcIcon="/icons/icone-github.svg"
             altIcon="Icone Github"
           />
           <IconSocialMedia
             href="https://wa.link/n2kytx"
-            srcIcon="icone-wtpp.svg"
+            srcIcon="/icons/icone-wtpp.svg"
             altIcon="Icone WhatsApp"
           />
           <IconSocialMedia
             href="mailto:devbrunomendonca@gmail.com"
-            srcIcon="icone-email.svg"
+            srcIcon="/icons/icone-email.svg"
             altIcon="Icone Email"
           />
-        </ListIconSocialMedias>
+        </ListIcons>
       </SheetContent>
     </Sheet>
   )
