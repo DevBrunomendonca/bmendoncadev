@@ -67,20 +67,58 @@ const config: Config = {
       },
       keyframes: {
         animationArrowOne: {
-          "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
-          "50%": { opcity: "1", transform: "translatey(0)" },
+          "0%, 100%": {
+            opcity: "0.1",
+            transform: "translatey(10px)",
+          },
+          "50%": {
+            opcity: "1",
+            transform: "translatey(0)",
+          },
         },
         animationArrowTwo: {
-          "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
-          "50%": { opcity: "1", transform: "translatey(0)" },
+          "0%, 100%": {
+            opcity: "0.1",
+            transform: "translatey(10px)",
+          },
+          "50%": {
+            opcity: "1",
+            transform: "translatey(0)",
+          },
         },
         animationArrowThree: {
-          "0%, 100%": { opcity: "0.1", transform: "translatey(10px)" },
-          "50%": { opcity: "1", transform: "translatey(0)" },
+          "0%, 100%": {
+            opcity: "0.1",
+            transform: "translatey(10px)",
+          },
+          "50%": {
+            opcity: "1",
+            transform: "translatey(0)",
+          },
+        },
+        "accordion-down": {
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
+        },
+        "accordion-up": {
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
       },
       boxShadow: {
         shadowOne: "5px 4px 25px 0px rgba(62,86,146,0.4)",
+      },
+      animation: {
+        "accordion-down": "accordion-down 0.2s ease-out",
+        "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
   },
