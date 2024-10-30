@@ -31,6 +31,7 @@ const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ interval = 3000 }) => {
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
+        {/* TODO: Adiciona carrosseis */}
         <div className="embla__container">
           <ContentCarouselProjects
             name="Casa&Terra"
