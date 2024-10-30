@@ -3,6 +3,7 @@ import "./globals.css"
 import Header from "./_components/header"
 
 import { Poppins } from "next/font/google"
+import Footer from "./_components/footer"
 
 export const metadata: Metadata = {
   title: "Portfólio - Bruno Mendonça",
@@ -24,7 +25,8 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={poppins.className}>
         <Header />
-        {children}
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   )
