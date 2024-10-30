@@ -6,7 +6,6 @@ import ContentCarouselProjects from "./content-carousel-projects"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 interface EmblaCarouselProps {
-  slides: string[]
   interval?: number
 }
 

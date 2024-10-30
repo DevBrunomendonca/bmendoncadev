@@ -19,7 +19,7 @@ const CardService = ({
   return (
     <div
       className={cn(
-        "w-full space-y-6 rounded-md bg-primary-blue p-5 shadow-shadowOne",
+        "w-full space-y-6 rounded-md bg-primary-blue p-5 shadow-shadowOne transition duration-300 ease-in-out md:hover:scale-105",
         className,
       )}
     >

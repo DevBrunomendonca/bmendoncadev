@@ -20,11 +20,6 @@ import CardContactBlog from "./_components/card-contact-blog"
 import AccordionFaq from "./_components/accordion-faq"
 
 const HomePage = () => {
-  const slides = [
-    "/macbook-casa-e-terra.webp",
-    "/macbook-casa-e-terra.webp",
-    "/macbook-casa-e-terra.webp",
-  ]
   return (
     <>
       <section className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner_home_m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner_home_d.webp')]">
@@ -40,12 +35,12 @@ const HomePage = () => {
           />
           <Button className="group/edit w-full max-w-[266px] bg-secondary-blue text-primary-white hover:bg-third-blue">
             Entrar em contato
-            <ArrowUpRight className="transition-all delay-150 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
+            <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
           </Button>
         </div>
         <ButtonGoToDown />
       </section>
-      <section className="px-4 py-12 lg:py-24">
+      <section className="px-4 pb-10 pt-20 md:pb-16 md:pt-32">
         <div className="mx-auto flex max-w-[600px] flex-col items-start gap-10 lg:max-w-6xl lg:flex-row lg:items-center">
           <Image
             src="/banners/banner-perfil.png"
@@ -141,7 +136,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="px-4 py-16 lg:py-24">
+      <section className="px-4 py-10 md:py-16">
         <div className="mx-auto flex max-w-7xl flex-col items-start gap-10 md:items-center md:gap-14">
           <div className="flex flex-col items-start -space-y-1 md:items-center">
             <FourthTitle className="text-center" content="Serviços" />
@@ -150,7 +145,7 @@ const HomePage = () => {
               content="Soluções digitais para o seu negócio"
             />
           </div>
-          <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-4 lg:grid-cols-3">
+          <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-4 md:gap-6 lg:grid-cols-3">
             <CardService
               className="sm:col-start-2 sm:col-end-4 lg:col-start-auto lg:col-end-auto"
               title="UI/UX Design"
@@ -175,14 +170,14 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="px-4 py-16 lg:py-24">
+      <section className="px-4 py-10 md:py-16">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-col items-center gap-5 md:gap-5">
             <div className="flex flex-col items-center -space-y-1 pb-5 md:pb-10">
               <FourthTitle content="Projetos em Destaque" />
               <SecondTitle content="Desenvolvendo Soluções Únicas" />
             </div>
-            <CarouselProjects slides={slides} interval={3000} />
+            <CarouselProjects interval={3000} />
             <Link className="w-full max-w-[266px]" href="/projetos">
               <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
                 Ver todos projetos
@@ -191,7 +186,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <section className="px-4 py-16 lg:py-24">
+      <section className="px-4 py-10 md:py-16">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-5 md:flex-row">
           <CardContactBlog
             title="Contato"
@@ -204,7 +199,7 @@ const HomePage = () => {
               >
                 <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
                   Entrar em contato
-                  <ArrowUpRight className="transition-all delay-150 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
+                  <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
                 </Button>
               </Link>
               {/* TODO: Anexar currículo */}
@@ -250,14 +245,14 @@ const HomePage = () => {
             <Link className="group/edit w-full md:max-w-[266px]" href="/blog">
               <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
                 Acessar blog
-                <ArrowRight className="transition-all delay-150 group-hover/edit:translate-x-1" />
+                <ArrowRight className="transition-all duration-300 group-hover/edit:translate-x-1" />
               </Button>
             </Link>
           </CardContactBlog>
         </div>
       </section>
-      <section className="px-4 py-16 lg:py-24">
-        <div className="mx-auto max-w-6xl space-y-10 md:space-y-14">
+      <section className="px-4 py-10 md:py-16">
+        <div className="mx-auto max-w-6xl space-y-6 md:space-y-10">
           <div className="flex flex-col items-center">
             <FourthTitle content="FAQ" />
             <SecondTitle content="Perguntas feitas com frequência" />
