@@ -1,7 +1,7 @@
 import Logo from "./logo"
 import { IconSocialMedia, ListIcons } from "./list-icons"
 import SheetButton from "./sheet-button"
-import ListNavHeader from "./list-nav-header"
+import ListNavigation from "./list-navigation"
 
 const Header = () => {
   return (
@@ -16,7 +16,7 @@ const Header = () => {
       <div className="mx-auto flex w-full max-w-6xl justify-between p-4">
         <Logo />
         <div className="hidden items-center gap-4 md:flex">
-          <ListNavHeader />
+          <ListNavigation />
           <div className="h-full w-[1px] bg-gray-50 opacity-15"></div>
           <ListIcons className="flex h-4 items-center gap-3">
             <IconSocialMedia
