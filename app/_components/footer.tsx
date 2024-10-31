@@ -65,9 +65,12 @@ const Footer = () => {
         <Separator className="bg-[#8C8A8A] opacity-5" />
       </div>
       <div className="flex flex-col items-center justify-between gap-2 md:flex-row md:items-start">
-        <Paragraph content="© Copyright 2024 Bruno Mendonça - Todos os direitos reservados." />
-        <div className="flex items-end gap-2">
-          <Paragraph content="Developed by" />
+        <Paragraph
+          className="text-center"
+          content="© Copyright 2024 Bruno Mendonça - Todos os direitos reservados."
+        />
+        <div className="flex items-center gap-2">
+          <Paragraph className="!text-center" content="Developed by" />
           <Logo />
         </div>
       </div>
