@@ -10,17 +10,23 @@ const ButtonGoToDown = () => {
   return (
     <button
       onClick={goToDown}
-      className="mx-auto max-w-8 cursor-pointer -space-y-5"
+      className="mx-auto flex max-w-8 animate-[animationArrow_2s_ease-in-out_infinite] cursor-pointer flex-col items-center -space-y-5"
     >
-      <div className="flex animate-[animationArrowOne_2s_ease-in-out_infinite] justify-center opacity-30">
-        <ChevronDown size={32} color="#4B639E" />
-      </div>
-      <div className="flex animate-[animationArrowTwo_2s_ease-in-out_infinite] justify-center opacity-60">
-        <ChevronDown size={32} color="#4B639E" />
-      </div>
-      <div className="flex animate-[animationArrowThree_2s_ease-in-out_infinite] justify-center">
-        <ChevronDown size={32} color="#4B639E" />
-      </div>
+      <ChevronDown
+        size={32}
+        color="#4B639E"
+        className="animate-pulse opacity-20"
+      />
+      <ChevronDown
+        size={32}
+        color="#4B639E"
+        className="animate-pulse opacity-60"
+      />
+      <ChevronDown
+        size={32}
+        color="#4B639E"
+        className="animate-pulse opacity-95"
+      />
     </button>
   )
 }
