@@ -15,7 +15,7 @@ const CardContactBlog = ({
 }: CardContactBlogProps) => {
   return (
     <div className="flex w-full flex-col items-start gap-6 rounded-md bg-primary-blue p-5 shadow-shadowOne">
-      <div className="-space-y-1">
+      <div className="space-y-1">
         <FourthTitle content={title} />
         <ThhirdTitle content={subtitle} />
       </div>

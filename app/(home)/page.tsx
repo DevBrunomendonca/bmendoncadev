@@ -44,10 +44,12 @@ const BannerSection = () => {
             em criar aplicações web de alto desempenho, utilizando as mais
             recentes tecnologias do mercado"
         />
-        <Button className="group/edit w-full max-w-[266px] bg-secondary-blue text-primary-white hover:bg-third-blue">
-          Entrar em contato
-          <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
-        </Button>
+        <Link className="mx-auto w-full max-w-[266px]" href="/contato">
+          <Button className="group/edit w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
+            Entrar em contato
+            <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
+          </Button>
+        </Link>
       </div>
       <ButtonGoToDown />
     </section>
@@ -69,7 +71,7 @@ const AboutSection = () => {
           }}
         />
         <div className="w-full space-y-4">
-          <div className="-space-y-1">
+          <div className="space-y-1">
             <FourthTitle content="Minha Jornada" />
             <SecondTitle content="Combinando técnica e visão para soluções eficazes" />
           </div>
@@ -157,7 +159,7 @@ const ServicesSection = () => {
   return (
     <section className="px-4 py-10 md:py-16">
       <div className="mx-auto flex max-w-7xl flex-col items-start gap-10 md:items-center md:gap-14">
-        <div className="flex flex-col items-start -space-y-1 md:items-center">
+        <div className="flex flex-col items-start space-y-1 md:items-center">
           <FourthTitle className="text-center" content="Serviços" />
           <SecondTitle
             className="text-center"
@@ -196,7 +198,7 @@ const ProjectsSection = () => {
     <section className="px-4 py-10 md:py-16">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-5 md:gap-5">
-          <div className="flex flex-col items-center -space-y-1 pb-5 md:pb-10">
+          <div className="flex flex-col items-center space-y-1 pb-5 md:pb-10">
             <FourthTitle content="Projetos em Destaque" />
             <SecondTitle content="Desenvolvendo Soluções Únicas" />
           </div>
@@ -222,7 +224,7 @@ const ContactBlogSection = () => {
           <div className="flex w-full flex-col items-center gap-3 sm:flex-row md:gap-5">
             <Link
               className="group/edit w-full md:max-w-[266px]"
-              href="/projetos"
+              href="/contato"
             >
               <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
                 Entrar em contato
@@ -230,7 +232,7 @@ const ContactBlogSection = () => {
               </Button>
             </Link>
             {/* TODO: Anexar currículo */}
-            <Link className="w-full md:max-w-[266px]" href="/projetos">
+            <Link className="w-full md:max-w-[266px]" href="/blog">
               <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
                 Baixar Currículo
                 <Download />

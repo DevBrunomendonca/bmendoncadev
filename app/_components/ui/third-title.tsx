@@ -9,7 +9,7 @@ const ThhirdTitle = ({ content, className }: ThirdTitleProps) => {
   return (
     <h3
       className={cn(
-        "text-lg font-medium text-primary-white md:text-xl",
+        "text-lg font-medium leading-5 text-primary-white md:text-xl",
         className,
       )}
     >
