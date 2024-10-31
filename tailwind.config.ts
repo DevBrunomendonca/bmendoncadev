@@ -66,7 +66,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        animationArrowOne: {
+        animationOne: {
           "0%, 100%": {
             opcity: "0.1",
             transform: "translatey(10px)",
@@ -76,17 +76,7 @@ const config: Config = {
             transform: "translatey(0)",
           },
         },
-        animationArrowTwo: {
-          "0%, 100%": {
-            opcity: "0.1",
-            transform: "translatey(10px)",
-          },
-          "50%": {
-            opcity: "1",
-            transform: "translatey(0)",
-          },
-        },
-        animationArrowThree: {
+        animationArrow: {
           "0%, 100%": {
             opcity: "0.1",
             transform: "translatey(10px)",
