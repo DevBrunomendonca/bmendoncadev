@@ -1,6 +1,7 @@
 import { Button } from "@/app/_components/ui/button"
 import ThhirdTitle from "@/app/_components/ui/third-title"
-import { cacheGetProjects } from "@/app/_data-access/get-projects"
+import { cacheGetProjects } from "@/app/_data-access/projects/get-projects"
+
 import { Github, Globe } from "lucide-react"
 import Image from "next/image"
 

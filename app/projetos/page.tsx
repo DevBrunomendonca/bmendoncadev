@@ -3,7 +3,7 @@ import FourthTitle from "../_components/ui/fourth-title"
 import Title from "../_components/ui/title"
 import CardProjects from "./_components/card-projects"
 import { CardSkeleton } from "../_components/ui/card-skeleton"
-import CardSkeletonProjects from "./_components/card-skeleton"
+import SkeletonCardProjects from "./_components/skeleton-card-projects"
 
 const ProjectsPage = async () => {
   return (
@@ -20,10 +20,10 @@ const ProjectsPage = async () => {
       </div>
       <Suspense
         fallback={
-          <CardSkeleton className="grid grid-cols-1 gap-1 sm:grid-cols-2 lg:grid-cols-3">
-            <CardSkeletonProjects />
-            <CardSkeletonProjects />
-            <CardSkeletonProjects />
+          <CardSkeleton className="grid w-full grid-cols-1 gap-5 p-0 sm:grid-cols-2 lg:grid-cols-3">
+            <SkeletonCardProjects />
+            <SkeletonCardProjects />
+            <SkeletonCardProjects />
           </CardSkeleton>
         }
       >
