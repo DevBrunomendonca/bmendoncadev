@@ -19,7 +19,7 @@ const CardProjects = async () => {
             alt={`Banner ${project.title}`}
             width={0}
             height={0}
-            className="w-full rounded-t-md"
+            className="min-h-fit w-full rounded-t-md"
             sizes="100vw"
             priority
             placeholder="blur"
@@ -29,7 +29,10 @@ const CardProjects = async () => {
             <ThhirdTitle content={project.title} />
             <div className="w-full">
               <a target="_blank" href={project.projectUrl} className="w-full">
-                <Button className="mb-1 w-full bg-secondary-blue hover:bg-third-blue md:mb-2">
+                <Button
+                  aria-label="Acessar projeto"
+                  className="mb-1 w-full bg-secondary-blue hover:bg-third-blue md:mb-2"
+                >
                   Acessar projeto
                   <Globe color="#f1f1f1" />
                 </Button>
@@ -39,7 +42,10 @@ const CardProjects = async () => {
                 href={project.repositoryUrl}
                 className="w-full"
               >
-                <Button className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2">
+                <Button
+                  aria-label="Acessar repositório"
+                  className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2"
+                >
                   Acessar Repositório
                   <Github color="#f1f1f1" />
                 </Button>

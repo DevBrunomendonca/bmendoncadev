@@ -32,7 +32,7 @@ const ListNavigation = ({ className }: ListNavigationProps) => {
           <li>Contato</li>
         </Link>
         <Link
-          className={`${pathName === "/blog" ? "hover:none font-medium text-primary-white" : "font-normal text-gray-400 hover:text-gray-200"} w-full cursor-pointer text-sm transition-all`}
+          className={`${pathName.startsWith("/blog") ? "hover:none font-medium text-primary-white" : "font-normal text-gray-400 hover:text-gray-200"} w-full cursor-pointer text-sm transition-all`}
           href="/blog"
         >
           <li>Blog</li>

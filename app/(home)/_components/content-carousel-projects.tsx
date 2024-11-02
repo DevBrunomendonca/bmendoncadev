@@ -25,13 +25,19 @@ const ContentCarouselProjects = ({
           <ThhirdTitle content={name} />
           <div>
             <a href={hrefProject} className="w-full">
-              <Button className="mb-1 w-full bg-secondary-blue hover:bg-third-blue md:mb-2">
+              <Button
+                aria-label="Acessar projeto"
+                className="mb-1 w-full bg-secondary-blue hover:bg-third-blue md:mb-2"
+              >
                 Acessar projeto
                 <Globe color="#f1f1f1" />
               </Button>
             </a>
             <a href={hrefGithub} className="w-full">
-              <Button className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2">
+              <Button
+                aria-label="Acessar repositório"
+                className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2"
+              >
                 Acessar Repositório
                 <Github color="#f1f1f1" />
               </Button>

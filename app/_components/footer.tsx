@@ -13,6 +13,9 @@ import Logo from "./logo"
 const Footer = () => {
   return (
     <footer className="mx-auto max-w-6xl space-y-8 px-4 pb-8 pt-10 md:pt-16">
+      <div className="px-8 md:px-16">
+        <Separator className="bg-[#8C8A8A] opacity-5" />
+      </div>
       <div className="mx-auto flex max-w-6xl flex-col justify-between gap-10 md:flex-row md:gap-6">
         <div className="max-w-[420px] space-y-4">
           <ThhirdTitle
@@ -53,7 +56,10 @@ const Footer = () => {
             content="Acompanhe dicas e novidades sobre desenvolvimento e tecnologia."
           />
           <Link className="group/edit w-full" href="/blog">
-            <Button className="mt-4 w-full max-w-[266px] bg-secondary-blue text-primary-white hover:bg-third-blue">
+            <Button
+              aria-label="Acessar blog"
+              className="mt-4 w-full max-w-[266px] bg-secondary-blue text-primary-white hover:bg-third-blue"
+            >
               Acessar blog
               <ArrowRight className="transition-all duration-300 group-hover/edit:translate-x-1" />
             </Button>

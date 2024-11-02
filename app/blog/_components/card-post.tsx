@@ -21,7 +21,7 @@ const CardPost = async () => {
             alt={`Capa do post ${post.title}`}
             width={0}
             height={0}
-            className="w-full rounded-t-md"
+            className="min-h-fit w-full rounded-t-md"
             quality={100}
             sizes="100vw"
             priority
@@ -45,6 +45,7 @@ const CardPost = async () => {
                 />
               </div>
               <Button
+                aria-label="Ver post"
                 variant="link"
                 className="gap-1 text-primary-gray hover:text-primary-white"
               >

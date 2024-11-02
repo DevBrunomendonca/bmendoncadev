@@ -35,17 +35,18 @@ const HomePage = () => {
 
 const BannerSection = () => {
   return (
-    <section className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner_home_m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner-home-d.webp')]">
+    <section className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner-home-m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner-home-d.webp')]">
       <div className="mx-auto flex h-full max-w-5xl flex-col items-center justify-center gap-3 px-4 pt-28 md:gap-5">
         <Title content="Transformando Ideias em Soluções Digitais" />
         <Paragraph
           className="max-w-[800px] text-center"
-          content="Desenvolvedor Full-Stack especializado em soluções modernas, focado
-            em criar aplicações web de alto desempenho, utilizando as mais
-            recentes tecnologias do mercado"
+          content="Desenvolvendo experiências digitais e soluções modernas, com foco na criação de aplicações web de alto desempenho, utilizando as mais recentes tecnologias do mercado."
         />
         <Link className="mx-auto w-full max-w-[266px]" href="/contato">
-          <Button className="group/edit w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
+          <Button
+            aria-label="Entrar em contato"
+            className="group/edit w-full bg-secondary-blue text-primary-white hover:bg-third-blue"
+          >
             Entrar em contato
             <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
           </Button>
@@ -204,7 +205,10 @@ const ProjectsSection = () => {
           </div>
           <CarouselProjects interval={3000} />
           <Link className="w-full max-w-[266px]" href="/projetos">
-            <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
+            <Button
+              aria-label="Ver todos projetos"
+              className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue"
+            >
               Ver todos projetos
             </Button>
           </Link>
@@ -226,14 +230,20 @@ const ContactBlogSection = () => {
               className="group/edit w-full md:max-w-[266px]"
               href="/contato"
             >
-              <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
+              <Button
+                aria-label="Entrar em contato"
+                className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue"
+              >
                 Entrar em contato
                 <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
               </Button>
             </Link>
             {/* TODO: Anexar currículo */}
             <Link className="w-full md:max-w-[266px]" href="/blog">
-              <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
+              <Button
+                aria-label="Baixar Currículo"
+                className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue"
+              >
                 Baixar Currículo
                 <Download />
               </Button>
@@ -272,7 +282,10 @@ const ContactBlogSection = () => {
           subtitle="Acompanhe dicas e novidades sobre desenvolvimento e tecnologia."
         >
           <Link className="group/edit w-full md:max-w-[266px]" href="/blog">
-            <Button className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue">
+            <Button
+              aria-label="Acessar Blog"
+              className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue"
+            >
               Acessar blog
               <ArrowRight className="transition-all duration-300 group-hover/edit:translate-x-1" />
             </Button>

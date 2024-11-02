@@ -169,6 +169,7 @@ const ContentFormContact = () => {
               )}
             />
             <Button
+              aria-label="Enviar Mensage"
               className="group/edit w-full bg-secondary-blue hover:bg-third-blue"
               type="submit"
             >

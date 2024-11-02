@@ -11,6 +11,7 @@ const ButtonGoToDown = () => {
     <button
       onClick={goToDown}
       className="mx-auto flex max-w-8 animate-[animationArrow_2s_ease-in-out_infinite] cursor-pointer flex-col items-center -space-y-5"
+      aria-label="Ir para baixo"
     >
       <ChevronDown
         size={32}

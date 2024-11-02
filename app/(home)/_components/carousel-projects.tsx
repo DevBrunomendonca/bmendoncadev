@@ -59,12 +59,14 @@ const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ interval = 3000 }) => {
         <button
           className={`embla__button embla__button__prev`}
           onClick={() => emblaApi?.scrollPrev()}
+          aria-label="Voltar slide"
         >
           <ArrowLeft size={28} color="#3E5692" />
         </button>
         <button
           className={`embla__button embla__button__next`}
           onClick={scrollNext}
+          aria-label="Proximo slide"
         >
           <ArrowRight size={28} color="#3E5692" />
         </button>
