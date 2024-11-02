@@ -7,12 +7,7 @@ interface SecondoTitleProps {
 
 const SecondTitle = ({ content, className }: SecondoTitleProps) => {
   return (
-    <h2
-      className={cn(
-        "text-xl font-medium leading-5 text-primary-white",
-        className,
-      )}
-    >
+    <h2 className={cn("text-xl font-medium text-primary-white", className)}>
       {content}
     </h2>
   )

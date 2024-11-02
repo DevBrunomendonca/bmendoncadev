@@ -13,7 +13,7 @@ const AccordionFaq = () => {
         className="border-b-[1px] border-[#8C8A8A] border-opacity-20"
         value="item-1"
       >
-        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium leading-5 text-primary-white">
+        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium text-primary-white">
           1. Qual é o seu prazo médio de entrega?
         </AccordionTrigger>
         <AccordionContent>
@@ -24,7 +24,7 @@ const AccordionFaq = () => {
         className="border-b-[1px] border-[#8C8A8A] border-opacity-20"
         value="item-2"
       >
-        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium leading-5 text-primary-white">
+        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium text-primary-white">
           2. Você oferece suporte e manutenção após o término do projeto?
         </AccordionTrigger>
         <AccordionContent>
@@ -35,7 +35,7 @@ const AccordionFaq = () => {
         className="border-b-[1px] border-[#8C8A8A] border-opacity-20"
         value="item-3"
       >
-        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium leading-5 text-primary-white">
+        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium text-primary-white">
           3. Como posso acompanhar o progresso do projeto?
         </AccordionTrigger>
         <AccordionContent>
@@ -46,7 +46,7 @@ const AccordionFaq = () => {
         className="border-b-[1px] border-[#8C8A8A] border-opacity-20"
         value="item-4"
       >
-        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium leading-5 text-primary-white">
+        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium text-primary-white">
           4. Como você define o orçamento de um projeto?
         </AccordionTrigger>
         <AccordionContent>
@@ -57,7 +57,7 @@ const AccordionFaq = () => {
         className="border-b-[1px] border-[#8C8A8A] border-opacity-20"
         value="item-5"
       >
-        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium leading-5 text-primary-white">
+        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium text-primary-white">
           5. Quais tecnologias você utiliza com mais frequência?
         </AccordionTrigger>
         <AccordionContent>
@@ -68,7 +68,7 @@ const AccordionFaq = () => {
         className="border-b-[1px] border-[#8C8A8A] border-opacity-20"
         value="item-6"
       >
-        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium leading-5 text-primary-white">
+        <AccordionTrigger className="items-start pr-4 text-start text-base font-medium text-primary-white">
           6. Quais são seus principais diferenciais como desenvolvedor?
         </AccordionTrigger>
         <AccordionContent>

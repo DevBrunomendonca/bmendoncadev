@@ -35,7 +35,7 @@ const HomePage = () => {
 
 const BannerSection = () => {
   return (
-    <section className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner_home_m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner_home_d.webp')]">
+    <section className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner_home_m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner-home-d.webp')]">
       <div className="mx-auto flex h-full max-w-5xl flex-col items-center justify-center gap-3 px-4 pt-28 md:gap-5">
         <Title content="Transformando Ideias em Soluções Digitais" />
         <Paragraph

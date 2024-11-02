@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="mx-auto flex max-w-6xl flex-col justify-between gap-10 md:flex-row md:gap-6">
         <div className="max-w-[420px] space-y-4">
           <ThhirdTitle
-            className="!text-base !leading-5"
+            className="!text-base"
             content="Me acompanhe nas redes sociais ou entre em contato"
           />
           <ListIcons className="flex h-6 items-center gap-3">
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         <div className="max-w-[420px]">
           <ThhirdTitle
-            className="!text-base !leading-5"
+            className="!text-base"
             content="Acompanhe dicas e novidades sobre desenvolvimento e tecnologia."
           />
           <Link className="group/edit w-full" href="/blog">
