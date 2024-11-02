@@ -21,10 +21,12 @@ const CardPost = async () => {
             alt={`Capa do post ${post.title}`}
             width={0}
             height={0}
-            sizes="100vh"
             className="w-full rounded-t-md"
-            priority
             quality={100}
+            sizes="100vw"
+            priority
+            placeholder="blur"
+            blurDataURL="/banners/image-loading.webp"
           />
           <div className="p-4">
             <ThhirdTitle content={post.title} />
