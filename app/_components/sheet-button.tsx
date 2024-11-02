@@ -26,7 +26,7 @@ const SheetButton = () => {
   }
   return (
     <Sheet open={sheetIsOpen} onOpenChange={setSheetIsOpen}>
-      <SheetTrigger className="block md:hidden">
+      <SheetTrigger aria-label="abrir menu" className="block md:hidden">
         <AlignRight color="#f1f1f1" size={24} />
       </SheetTrigger>
       <SheetContent className="w-[310px] bg-primary-blue px-4 sm:w-[540px]">

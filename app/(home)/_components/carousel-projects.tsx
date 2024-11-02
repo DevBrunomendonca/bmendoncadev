@@ -30,28 +30,27 @@ const EmblaCarousel: React.FC<EmblaCarouselProps> = ({ interval = 3000 }) => {
   return (
     <div className="embla">
       <div className="embla__viewport" ref={emblaRef}>
-        {/* TODO: Adiciona carrosseis */}
         <div className="embla__container">
           <ContentCarouselProjects
             name="Casa&Terra"
-            hrefProject="#"
-            hrefGithub="#"
+            hrefProject="https://casa-terra-fww6.vercel.app"
+            hrefGithub="https://github.com/DevBrunomendonca/casa-terra"
             srcImgMobile="/banners/banner-mobi-casa-e-terra.webp"
             srcImgLeptop="/banners/banner-leptop-casa-e-terra.webp"
           />
           <ContentCarouselProjects
-            name="Casa&Terra"
-            hrefProject="#"
-            hrefGithub="#"
-            srcImgMobile="/banners/banner-mobi-casa-e-terra.webp"
-            srcImgLeptop="/banners/banner-leptop-casa-e-terra.webp"
+            name="Aurum Capital"
+            hrefProject="https://www.aurumcapital.trade"
+            hrefGithub="https://github.com/DevBrunomendonca/aurum"
+            srcImgMobile="/banners/banner-mobile-aurum.webp"
+            srcImgLeptop="/banners/banner-leptop-aurum.webp"
           />
           <ContentCarouselProjects
-            name="Casa&Terra"
-            hrefProject="#"
-            hrefGithub="#"
-            srcImgMobile="/banners/banner-mobi-casa-e-terra.webp"
-            srcImgLeptop="/banners/banner-leptop-casa-e-terra.webp"
+            name="DJB Flooring"
+            hrefProject="https://www.djbfloors.net"
+            hrefGithub="https://github.com/DevBrunomendonca/djb-flooring"
+            srcImgMobile="/banners/banner-mobile-djb.webp"
+            srcImgLeptop="/banners/banner-leptop-djb.webp"
           />
         </div>
       </div>

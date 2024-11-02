@@ -45,7 +45,6 @@ const Header = () => {
               altIcon="Icone Email"
             />
           </ListIcons>
-          <div className="flex h-4 items-center gap-3"></div>
         </div>
         <SheetButton />
       </div>

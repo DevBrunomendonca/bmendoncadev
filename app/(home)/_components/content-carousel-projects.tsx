@@ -24,7 +24,7 @@ const ContentCarouselProjects = ({
         <div className="flex w-full flex-col items-start gap-2 sm:max-w-[310px] md:items-start lg:w-2/5">
           <ThhirdTitle content={name} />
           <div>
-            <a href={hrefProject} className="w-full">
+            <a target="_blank" href={hrefProject} className="w-full">
               <Button
                 aria-label="Acessar projeto"
                 className="mb-1 w-full bg-secondary-blue hover:bg-third-blue md:mb-2"
@@ -33,7 +33,7 @@ const ContentCarouselProjects = ({
                 <Globe color="#f1f1f1" />
               </Button>
             </a>
-            <a href={hrefGithub} className="w-full">
+            <a target="_blank" href={hrefGithub} className="w-full">
               <Button
                 aria-label="Acessar repositório"
                 className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2"
