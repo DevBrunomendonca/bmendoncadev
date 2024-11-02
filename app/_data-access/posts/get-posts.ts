@@ -2,7 +2,7 @@ import { db } from "@/app/_lib/prisma"
 import { Prisma } from "@prisma/client"
 import { unstable_cache } from "next/cache"
 
-export type CardPostRenderWithAuthorAndCategory = Prisma.PostGetPayload<{
+export type PostWithAuthorAndCategory = Prisma.PostGetPayload<{
   include: {
     autor: {
       select: {
@@ -21,9 +21,7 @@ export type CardPostRenderWithAuthorAndCategory = Prisma.PostGetPayload<{
   }
 }>
 
-export const getPosts = async (): Promise<
-  CardPostRenderWithAuthorAndCategory[]
-> => {
+export const getPosts = async (): Promise<PostWithAuthorAndCategory[]> => {
   await new Promise((resolve) => setTimeout(resolve, 3000))
   const posts = await db.post.findMany({
     include: {

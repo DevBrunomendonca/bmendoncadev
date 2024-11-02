@@ -1,7 +1,13 @@
 export interface PostContent {
   introduction: string
   sections: Array<{
-    heading: string
-    content: string | Array<string | { subheading: string; code: string }>
+    title: string
+    paragraphs?: string[]
+    subsections?: Array<{
+      title: string
+      paragraphs?: string[]
+      code?: string[]
+      explanation?: string
+    }>
   }>
 }
