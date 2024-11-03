@@ -68,22 +68,29 @@ const PostContentPage = async ({ params: { postId } }: PostContentProps) => {
       ) : (
         <p>Conteúdo indisponível ou inválido</p>
       )}
-      <div className="mx-auto mt-8 max-w-3xl border-l-4 border-third-blue pl-4">
-        <ThhirdTitle content="Autor desse Artigo" />
-        <div className="flex items-center gap-2 pt-4">
-          <Image
-            src={post.autor.avatarUrl}
-            alt={`Icone de perfil ${post.autor.name}`}
-            width={48}
-            height={48}
-            className="rounded-full"
+      <div className="mx-auto max-w-3xl pt-8">
+        <div>
+          <Paragraph
+            content={`Categoria: ${post.category.name} - Publicado em ${new Date(post.createdAt).toLocaleDateString("pt-BR")}`}
           />
-          <div>
-            <Paragraph
-              className="font-medium text-primary-white"
-              content={post.autor.name}
+        </div>
+        <div className="mt-8 border-l-4 border-third-blue pl-4">
+          <ThhirdTitle content="Autor desse Artigo" />
+          <div className="flex items-center gap-2 pt-4">
+            <Image
+              src={post.autor.avatarUrl}
+              alt={`Icone de perfil ${post.autor.name}`}
+              width={48}
+              height={48}
+              className="rounded-full"
             />
-            <Paragraph content={post.autor.description} />
+            <div>
+              <Paragraph
+                className="font-medium text-primary-white"
+                content={post.autor.name}
+              />
+              <Paragraph content={post.autor.description} />
+            </div>
           </div>
         </div>
       </div>
