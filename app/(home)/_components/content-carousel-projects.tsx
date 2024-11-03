@@ -38,7 +38,7 @@ const ContentCarouselProjects = ({
                 aria-label="Acessar repositório"
                 className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2"
               >
-                Acessar Repositório
+                Acessar repositório
                 <Github color="#f1f1f1" />
               </Button>
             </a>

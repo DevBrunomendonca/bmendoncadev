@@ -102,6 +102,10 @@ const config: Config = {
             height: "0",
           },
         },
+        animationText: {
+          from: { opacity: "0" },
+          to: { oapcity: "1" },
+        },
       },
       boxShadow: {
         shadowOne: "5px 4px 14px 0px rgba(62,86,146,0.25)",

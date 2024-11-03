@@ -48,9 +48,10 @@ const BannerSection = () => {
         id="home-banner-section"
         className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner-home-m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner-home-d.webp')]"
       >
-        <div className="mx-auto flex h-full max-w-5xl flex-col items-center justify-center gap-3 px-4 pt-28 md:gap-5">
+        <div className="mx-auto flex h-full max-w-5xl animate-[animationText_ease-in-out_3s] flex-col items-center justify-center gap-3 px-4 pt-28 md:gap-5">
           <Title
             id="title-banner-section"
+            className=""
             content="Transformando Ideias em Soluções Digitais"
           />
           <Paragraph
@@ -317,10 +318,10 @@ const ContactBlogSection = () => {
               {/* TODO: Anexar currículo */}
               <Link className="w-full md:max-w-[266px]" href="/blog">
                 <Button
-                  aria-label="Baixar Currículo"
+                  aria-label="Baixar currículo"
                   className="w-full bg-secondary-blue text-primary-white hover:bg-third-blue"
                 >
-                  Baixar Currículo
+                  Baixar currículo
                   <Download />
                 </Button>
               </Link>

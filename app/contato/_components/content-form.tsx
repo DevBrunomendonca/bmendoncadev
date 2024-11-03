@@ -169,11 +169,11 @@ const ContentFormContact = () => {
               )}
             />
             <Button
-              aria-label="Enviar Mensage"
+              aria-label="Enviar mensage"
               className="group/edit w-full bg-secondary-blue hover:bg-third-blue"
               type="submit"
             >
-              Enviar Mensagem
+              Enviar mensagem
               <ArrowUpRight className="transition-all duration-300 group-hover/edit:-translate-y-1 group-hover/edit:translate-x-1" />
             </Button>
           </form>

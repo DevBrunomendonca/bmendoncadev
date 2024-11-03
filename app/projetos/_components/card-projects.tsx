@@ -33,7 +33,7 @@ const CardProjects = ({ projects }: CardProjectsProps) => {
             <div className="w-full">
               <a target="_blank" href={project.projectUrl} className="w-full">
                 <Button
-                  aria-label="Acessar projeto"
+                  aria-label="Acessar Projeto"
                   className="mb-1 w-full bg-secondary-blue hover:bg-third-blue md:mb-2"
                 >
                   Acessar projeto
@@ -49,7 +49,7 @@ const CardProjects = ({ projects }: CardProjectsProps) => {
                   aria-label="Acessar repositório"
                   className="mt-1 w-full bg-secondary-blue hover:bg-third-blue md:mt-2"
                 >
-                  Acessar Repositório
+                  Acessar repositório
                   <Github color="#f1f1f1" />
                 </Button>
               </a>
