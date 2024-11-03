@@ -139,7 +139,7 @@ const AboutSection = () => {
             >
               <Icon
                 className="h-[18px] w-[59px] md:h-[28px] md:w-[90px]"
-                srcIcon="icons/icone-node.svg"
+                srcIcon="/icons/icone-node.svg"
                 altIcon="Icone Node.js"
               />
               <Icon
