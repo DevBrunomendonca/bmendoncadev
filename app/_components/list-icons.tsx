@@ -5,6 +5,7 @@ import { cn } from "../_lib/utils"
 interface ListIconSocialMediaProps {
   children: ReactNode
   className: string
+  id?: string
 }
 
 interface IconSocialMediaProps {
@@ -23,8 +24,13 @@ interface IconProps {
 export const ListIcons = ({
   children,
   className,
+  id,
 }: ListIconSocialMediaProps) => {
-  return <div className={cn("", className)}>{children}</div>
+  return (
+    <div id={id} className={cn("", className)}>
+      {children}
+    </div>
+  )
 }
 export const IconSocialMedia = ({
   href,

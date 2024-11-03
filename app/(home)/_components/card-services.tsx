@@ -8,6 +8,7 @@ interface CardServiceProps {
   title: string
   description: string
   className?: string
+  id?: string
 }
 
 const CardService = ({
@@ -15,20 +16,23 @@ const CardService = ({
   title,
   description,
   className,
+  id,
 }: CardServiceProps) => {
   return (
-    <div
-      className={cn(
-        "w-full space-y-6 rounded-md bg-primary-blue p-5 shadow-shadowOne transition duration-300 ease-in-out md:hover:scale-105",
-        className,
-      )}
-    >
-      <div className="flex items-center gap-3">
-        <div className="rounded-sm bg-secondary-blue p-1.5">{children}</div>
+    <div id={id} className="min-h-full">
+      <div
+        className={cn(
+          "h-full w-full space-y-6 rounded-md bg-primary-blue p-5 shadow-shadowOne transition duration-300 ease-in-out md:hover:scale-105",
+          className,
+        )}
+      >
+        <div className="flex items-center gap-3">
+          <div className="rounded-sm bg-secondary-blue p-1.5">{children}</div>
 
-        <ThhirdTitle content={title} />
+          <ThhirdTitle content={title} />
+        </div>
+        <Paragraph content={description} />
       </div>
-      <Paragraph content={description} />
     </div>
   )
 }

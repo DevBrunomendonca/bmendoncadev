@@ -1,12 +1,15 @@
 import { Button } from "@/app/_components/ui/button"
 import ThhirdTitle from "@/app/_components/ui/third-title"
-import { cacheGetProjects } from "@/app/_data-access/projects/get-projects"
+import { Projects } from "@prisma/client"
 
 import { Github, Globe } from "lucide-react"
 import Image from "next/image"
 
-const CardProjects = async () => {
-  const projects = await cacheGetProjects()
+interface CardProjectsProps {
+  projects: Projects[]
+}
+
+const CardProjects = ({ projects }: CardProjectsProps) => {
   return (
     <div className="gird-cols-1 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       {projects.map((project) => (
