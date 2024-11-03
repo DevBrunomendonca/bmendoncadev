@@ -7,7 +7,26 @@ import Footer from "./_components/footer"
 
 export const metadata: Metadata = {
   title: "Portfólio - Bruno Mendonça",
-  description: "...",
+  description:
+    "Desenvolvendo experiências digitais e soluções modernas, com foco na criação de aplicações web de alto desempenho, utilizando as mais recentes tecnologias do mercado.",
+  icons: {
+    icon: "/favicon-pottfolio.ico",
+  },
+  openGraph: {
+    title: "Portfólio - Bruno Mendonça",
+    description:
+      "Desenvolvendo experiências digitais e soluções modernas, com foco na criação de aplicações web de alto desempenho, utilizando as mais recentes tecnologias do mercado.",
+    url: "",
+    type: "website",
+    images: [
+      {
+        url: "/banner-main.webp",
+        width: 1200,
+        height: 630,
+        alt: "Banner Portfólio",
+      },
+    ],
+  },
 }
 
 const poppins = Poppins({
