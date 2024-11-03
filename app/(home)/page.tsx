@@ -48,10 +48,9 @@ const BannerSection = () => {
         id="home-banner-section"
         className="flex h-[642px] flex-col justify-between bg-[url('/banners/banner-home-m.webp')] bg-cover bg-center bg-no-repeat md:bg-[url('/banners/banner-home-d.webp')]"
       >
-        <div className="mx-auto flex h-full max-w-5xl animate-[animationText_ease-in-out_3s] flex-col items-center justify-center gap-3 px-4 pt-28 md:gap-5">
+        <div className="mx-auto flex h-full max-w-5xl animate-[animationText_ease-in-out_4s] flex-col items-center justify-center gap-3 px-4 pt-28 md:animate-[animationText_ease-in-out_3s] md:gap-5">
           <Title
             id="title-banner-section"
-            className=""
             content="Transformando Ideias em Soluções Digitais"
           />
           <Paragraph
