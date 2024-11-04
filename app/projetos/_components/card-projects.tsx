@@ -22,11 +22,9 @@ const CardProjects = ({ projects }: CardProjectsProps) => {
             alt={`Banner ${project.title}`}
             width={0}
             height={0}
-            className="min-h-fit w-full rounded-t-md"
+            className="w-full rounded-t-md"
             sizes="100vw"
             priority
-            placeholder="blur"
-            blurDataURL="/banners/image-loading.webp"
           />
           <div className="flex w-full flex-col items-start gap-2 p-5">
             <ThhirdTitle content={project.title} />

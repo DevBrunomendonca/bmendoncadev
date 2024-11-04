@@ -58,6 +58,7 @@ const PostContentPage = async ({ params: { postId } }: PostContentProps) => {
             height={0}
             sizes="100vh"
             quality={100}
+            priority
             className="mx-auto w-full max-w-4xl rounded-lg"
           />
         )}
