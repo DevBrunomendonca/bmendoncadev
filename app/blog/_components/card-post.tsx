@@ -23,7 +23,7 @@ const CardPost = async () => {
             height={0}
             className="w-full rounded-t-md object-cover"
             quality={100}
-            sizes="100vw"
+            sizes="100vh"
             priority
           />
           <div className="p-4">

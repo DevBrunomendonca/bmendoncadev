@@ -23,7 +23,7 @@ const CardProjects = ({ projects }: CardProjectsProps) => {
             width={0}
             height={0}
             className="w-full rounded-t-md"
-            sizes="100vw"
+            sizes="100vh"
             priority
           />
           <div className="flex w-full flex-col items-start gap-2 p-5">
