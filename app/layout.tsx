@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Portfólio - Bruno Mendonça",
     description:
       "Desenvolvendo experiências digitais e soluções modernas, com foco na criação de aplicações web de alto desempenho, utilizando as mais recentes tecnologias do mercado.",
-    url: "",
+    url: "https://www.bmendoncadev.com.br",
     type: "website",
     images: [
       {
