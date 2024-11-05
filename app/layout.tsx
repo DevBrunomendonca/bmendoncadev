@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/banner-main.webp",
+        url: "/banners/banner-main.webp",
         width: 1200,
         height: 630,
         alt: "Banner Portfólio",
